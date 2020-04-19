@@ -11,7 +11,6 @@ $dmSerif: 'DM Serif Display',
 serif;
 
 
-
 body {
     margin: 0;
     padding: 0;
@@ -46,11 +45,10 @@ header.main-header {
         height: 100%;
         padding: 2.5em;
         order: 1;
-        // background-color: ;
         text-align: center;
-        background: url(images/bg-pattern-intro-left-mobile.svg) no-repeat,
-        url(images/bg-pattern-intro-right-mobile.svg) bottom right $darkViolet no-repeat;
-        
+        background: url(images/bg-pattern-intro-left-mobile.svg) top left no-repeat,
+            url(images/bg-pattern-intro-right-mobile.svg) 100% 100% $darkViolet fixed no-repeat;
+
 
         .line {
             display: none;
@@ -62,6 +60,7 @@ header.main-header {
             font-weight: 400;
             font-size: 2.5em;
             line-height: 1em;
+            margin-bottom: 0.2em;
         }
 
         .intro-section__paragraph {
@@ -69,12 +68,11 @@ header.main-header {
             font-size: 0.8em;
             line-height: 2em;
             margin-bottom: 2.5em;
-            // letter-spacing: 0.1em;
         }
     }
 
-    .intro-section__photo{
-        
+    .intro-section__photo {
+
         img {
             height: 100%;
             width: 100%;
@@ -85,9 +83,11 @@ header.main-header {
 }
 
 .offer-section {
-    margin-top: 3em;
     text-align: center;
     padding: 2em;
+    background: url(images/bg-pattern-intro-right-mobile.svg) top right no-repeat;
+
+
 
     .offer-section__heading {
         font-family: $dmSerif;
@@ -95,29 +95,31 @@ header.main-header {
         font-weight: 400;
         font-size: 2.5em;
         line-height: 1em;
+        margin: 1em 0 2em 0;
     }
 
     .line {
+        margin-top: 10em;
         width: 40%;
         color: $veryLightGray;
     }
 
     .offer-section__cards {
-       .offer-section__cards-card {
-           margin-bottom: 4em;
+        .offer-section__cards-card {
+            margin-bottom: 4em;
 
-           .card-heading {
-               font-family: $dmSerif;
-               font-size: 1.4em;
-               color: $veryDarkViolet;
-           }
+            .card-heading {
+                font-family: $dmSerif;
+                font-size: 1.4em;
+                color: $veryDarkViolet;
+            }
 
-           .card-paragraph {
-               color: $darkGrayishViolet;
-               font-size: 0.95em;
-               padding: 0 2em;
-           }
-       }
+            .card-paragraph {
+                color: $darkGrayishViolet;
+                font-size: 0.95em;
+                padding: 0 2em;
+            }
+        }
     }
 
     .offer-section__cta {
@@ -147,6 +149,13 @@ footer.main-footer {
         padding: 0;
     }
 
+    hr {
+        width: 75% !important;
+        color: $darkGrayishViolet;
+        opacity: .5;
+        margin-top: 2em;
+    }
+
     .main-footer__intro {
         display: flex;
         flex-direction: column;
@@ -155,14 +164,9 @@ footer.main-footer {
         min-height: 100px;
         width: 100%;
         background-image: url(images/bg-pattern-footer-mobile.svg);
+        background-size: cover;
         margin: 1em 0;
-
-        hr {
-            width: 90% !important;
-            color: $veryLightGray;
-            opacity: .2;
-            margin-top: 2em;
-        }
+       
 
         .main-footer__intro-logo {
             max-width: 80px;
@@ -180,13 +184,15 @@ footer.main-footer {
                 }
             }
 
-            
+
         }
     }
+
     .main-footer__menu {
         .main-footer__menu-column {
 
             margin-bottom: 3em;
+
             .main-footer__menu-column-paragraph {
                 text-transform: uppercase;
                 color: $darkGrayishViolet;
