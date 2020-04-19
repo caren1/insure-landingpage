@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+header.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header.main-header .main-header__logo img {
+  max-width: 90px;
+}
+
+.intro-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro-section .intro-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 2.5em;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: center;
+  background: url(images/bg-pattern-intro-left-mobile.svg) no-repeat, url(images/bg-pattern-intro-right-mobile.svg) bottom right #2d2640 no-repeat;
+}
+
+.intro-section .intro-section__content .line {
+  display: none;
+}
+
+.intro-section .intro-section__content .intro-section__heading {
+  font-family: "DM Serif Display", serif;
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+.intro-section .intro-section__content .intro-section__paragraph {
+  color: #fafafa;
+  font-size: 0.8em;
+  line-height: 2em;
+  margin-bottom: 2.5em;
+}
+
+.intro-section .intro-section__photo img {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.offer-section {
+  margin-top: 3em;
+  text-align: center;
+  padding: 2em;
+}
+
+.offer-section .offer-section__heading {
+  font-family: "DM Serif Display", serif;
+  color: #2b272f;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+.offer-section .line {
+  width: 40%;
+  color: #fafafa;
+}
+
+.offer-section .offer-section__cards .offer-section__cards-card {
+  margin-bottom: 4em;
+}
+
+.offer-section .offer-section__cards .offer-section__cards-card .card-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.4em;
+  color: #2b272f;
+}
+
+.offer-section .offer-section__cards .offer-section__cards-card .card-paragraph {
+  color: #837d87;
+  font-size: 0.95em;
+  padding: 0 2em;
+}
+
+.offer-section .offer-section__cta {
+  padding: 4em 2em;
+  height: 100%;
+  background: url(images/bg-pattern-how-we-work-mobile.svg) top right no-repeat #2d2640;
+}
+
+.offer-section .offer-section__cta h1 {
+  font-family: "DM Serif Display", serif;
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+footer.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+footer.main-footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer.main-footer .main-footer__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100px;
+  width: 100%;
+  background-image: url(images/bg-pattern-footer-mobile.svg);
+  margin: 1em 0;
+}
+
+footer.main-footer .main-footer__intro hr {
+  width: 90% !important;
+  color: #fafafa;
+  opacity: .2;
+  margin-top: 2em;
+}
+
+footer.main-footer .main-footer__intro .main-footer__intro-logo {
+  max-width: 80px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+footer.main-footer .main-footer__intro .main-footer__intro-socials a {
+  margin-right: 0.5em;
+}
+
+footer.main-footer .main-footer__intro .main-footer__intro-socials a img {
+  max-width: 18px;
+  max-height: 18px;
+}
+
+footer.main-footer .main-footer__menu .main-footer__menu-column {
+  margin-bottom: 3em;
+}
+
+footer.main-footer .main-footer__menu .main-footer__menu-column .main-footer__menu-column-paragraph {
+  text-transform: uppercase;
+  color: #837d87;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+footer.main-footer .main-footer__menu .main-footer__menu-column li {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: #2b272f;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 0.7em;
+  border: 1px solid #fafafa;
+  padding: 0.8em 2em;
+}
+/*# sourceMappingURL=style.css.map */

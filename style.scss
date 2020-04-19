@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+$darkViolet: hsl(256, 26%, 20%);
+$grayishBlue: hsl(216, 30%, 68%);
+$veryDarkViolet: hsl(270, 9%, 17%);
+$darkGrayishViolet: hsl(273, 4%, 51%);
+$veryLightGray: hsl(0, 0%, 98%);
+$karla: 'Karla',
+sans-serif;
+$dmSerif: 'DM Serif Display',
+serif;
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: $karla;
+}
+
+header.main-header {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-header__logo {
+        img {
+            max-width: 90px;
+        }
+    }
+}
+
+.intro-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .intro-section__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 2.5em;
+        order: 1;
+        // background-color: ;
+        text-align: center;
+        background: url(images/bg-pattern-intro-left-mobile.svg) no-repeat,
+        url(images/bg-pattern-intro-right-mobile.svg) bottom right $darkViolet no-repeat;
+        
+
+        .line {
+            display: none;
+        }
+
+        .intro-section__heading {
+            font-family: $dmSerif;
+            color: $veryLightGray;
+            font-weight: 400;
+            font-size: 2.5em;
+            line-height: 1em;
+        }
+
+        .intro-section__paragraph {
+            color: $veryLightGray;
+            font-size: 0.8em;
+            line-height: 2em;
+            margin-bottom: 2.5em;
+            // letter-spacing: 0.1em;
+        }
+    }
+
+    .intro-section__photo{
+        
+        img {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+}
+
+.offer-section {
+    margin-top: 3em;
+    text-align: center;
+    padding: 2em;
+
+    .offer-section__heading {
+        font-family: $dmSerif;
+        color: $veryDarkViolet;
+        font-weight: 400;
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+
+    .line {
+        width: 40%;
+        color: $veryLightGray;
+    }
+
+    .offer-section__cards {
+       .offer-section__cards-card {
+           margin-bottom: 4em;
+
+           .card-heading {
+               font-family: $dmSerif;
+               font-size: 1.4em;
+               color: $veryDarkViolet;
+           }
+
+           .card-paragraph {
+               color: $darkGrayishViolet;
+               font-size: 0.95em;
+               padding: 0 2em;
+           }
+       }
+    }
+
+    .offer-section__cta {
+        padding: 4em 2em;
+        height: 100%;
+        background: url(images/bg-pattern-how-we-work-mobile.svg) top right no-repeat $darkViolet;
+
+        h1 {
+            font-family: $dmSerif;
+            color: $veryLightGray;
+            font-weight: 400;
+            font-size: 2em;
+        }
+    }
+}
+
+footer.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .main-footer__intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        width: 100%;
+        background-image: url(images/bg-pattern-footer-mobile.svg);
+        margin: 1em 0;
+
+        hr {
+            width: 90% !important;
+            color: $veryLightGray;
+            opacity: .2;
+            margin-top: 2em;
+        }
+
+        .main-footer__intro-logo {
+            max-width: 80px;
+            margin-bottom: 2em;
+            margin-top: 2em;
+        }
+
+        .main-footer__intro-socials {
+            a {
+                margin-right: 0.5em;
+
+                img {
+                    max-width: 18px;
+                    max-height: 18px;
+                }
+            }
+
+            
+        }
+    }
+    .main-footer__menu {
+        .main-footer__menu-column {
+
+            margin-bottom: 3em;
+            .main-footer__menu-column-paragraph {
+                text-transform: uppercase;
+                color: $darkGrayishViolet;
+                font-size: 0.9em;
+                margin-bottom: 2em;
+            }
+
+            li {
+                text-transform: uppercase;
+                font-size: 0.7em;
+                color: $veryDarkViolet;
+                margin-bottom: 1em;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.btn-primary {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $veryLightGray;
+    font-size: 0.7em;
+    border: 1px solid $veryLightGray;
+    padding: 0.8em 2em;
+}
