@@ -189,7 +189,7 @@ header.main-header .main-header__logo img {
     top: 25%;
   }
   .intro-section .intro-section__photo img {
-    max-width: 80%;
+    max-width: 100%;
     min-width: 60%;
   }
 }

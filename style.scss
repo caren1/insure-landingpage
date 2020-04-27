@@ -156,8 +156,6 @@ header.main-header {
         background-color: $darkViolet;
         margin-bottom: 12em;
         
-        // position: relative;
-        // background: url(images/bg-pattern-intro-right-desktop.svg) 0 100% no-repeat $darkViolet;
         
         #rdp {
             display: block;
@@ -204,7 +202,7 @@ header.main-header {
             top: 25%;
 
             img {
-                max-width: 80%;
+                max-width: 100%;
                 min-width: 60%;
             }
         }
